@@ -1,0 +1,169 @@
+/* General styles */
+p, section{
+    /* Sets a max-width for all paragraphs */
+    max-width:740px;
+
+    /* Uses the margin trick to center */
+    margin:10px auto;
+  }
+
+ img{
+
+ 	/* Automatically resizes the images to fit the window width */
+ 	max-width: 100%;
+ 	height: auto;
+ }
+
+ /* Link styles */
+a{
+	color: #478bb8;
+}
+
+a:hover{
+ 	background: #e6e6e6;
+ }
+
+ 
+/* Body styles */
+ body{
+
+ 	/* Sets the font family for the body*/
+	font-family: 'EBGaramond';
+	font-size: 20px;
+ }
+
+/* Header styles */
+header{
+
+	/* Centers the header text */
+	text-align: center;
+
+}
+
+header h1{
+
+	/* Limits the width of the headline so that it's more readable */
+	max-width: 760px;
+
+	/* Uses the margin trick to center */
+	margin: 10px auto;
+ 
+	/* Left-aligns the text */
+	text-align: left;
+
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 57px;
+}
+
+header h2, h3, h4{
+
+	/* Limits the width of the headline so that it's more readable */
+	max-width: 740px;
+
+	/*Sets a smaller font size for h2s in the header section */
+	font-size: 20px;
+
+	/* Uses the margin trick to center */
+	margin: 10px auto;
+
+	/* Left-aligns the text */
+	text-align: left;
+}
+
+/* I made the byline H3 and the date H4, so I can change thier style without imapcting the subheadings (h2) */
+
+header h3 {
+
+	/*Sets a smaller font size for h3s in the header section */
+	font-size: 25px;
+
+}
+
+header h4 {
+	border-bottom: 1px solid;
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+
+	/*Sets a smaller font size for h3s in the header section */
+	font-size: 18px;
+
+}
+
+ /* Below is everything for the header images. This was hard to do, so don't touch! */
+
+figure.banner{
+
+ 	/* This display allows the figcaption to align with the image */
+ 	display:inline-block;
+ 	width: 48%;
+ 	Margin: 0.1%;
+ 	vertical-align: top; 
+
+ }
+
+/* The figure.banner img is targeting only the images within the figure*/
+
+ figure.banner img {
+    width: 100%; 
+    height: 450px; /* Forces the image to fill the figure height */
+    object-fit: cover; /* I used this tool to help me ensure the two images were the same size. I think that it essentially means the images will be cropped if need be to fit the desired size. */
+}
+
+ figcaption.bannerCaption {
+
+ 	/* Sets the font size for the caption text */
+	font-size: 12px;
+	
+	/* Centers the caption text */
+	text-align: left;
+
+	/* A margin-left of 20px helps the caption appear centered with the image even though it's technically a little shorter */
+	margin-left: 5px;
+
+	font-family:sans-serif;
+ }
+
+ /* here, I'm trying to make the two images I selected be next to each other horizontally */
+
+.photocontainer {
+    text-align: center; /* Centers the figures inside the container */
+    white-space: nowrap; /* Prevents figures from wrapping to the next line */
+}
+
+.photocontainer figure {
+    white-space: normal; /* Ensures that the text within each figure wraps correctly */
+}
+
+/* Above is everything for the images */
+
+
+
+ /* Styles for section headers */
+ .content-block h2{
+
+	/* Tweaking the top and bottom margins to make them look neater */
+	margin-top: 30px;
+	margin-bottom: -5px;
+ }
+
+
+/* Twitter embed styles */
+.twitter-tweet {
+
+	/* Adds a little space above and below */ 
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	/* Uses the margin trick to center */
+    margin: 10px auto;
+	
+}
+
+/* last section styles */ 
+.lastsection {
+	padding-bottom: 40px;
+}
+
